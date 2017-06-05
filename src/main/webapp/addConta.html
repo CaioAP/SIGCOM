@@ -39,42 +39,49 @@
       </div>
     </div>
 
-   <div id="fullscreen_bg" class="fullscreen_bg">
-    <form class="form-signin">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4 col-md-offset-6">
+   <div id="fullscreen_bg" class="fullscreen_bg"/>
+ <form class="form-signin">
+<div class="container">
+    <div class="row">
+        <div class="col-md-4 col-md-offset-4">
             <div class="panel panel-default">
-              <div class="panel-body">
-                <form class="form-signin">
-                  <h3 class="text-center">
-                    Login<br/><br/></h3> 
-                  <div class="form-group">                
-                    <div class="input-group">
-                      <span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span>
-                      </span>
-                      <input type="text" class="form-control" placeholder="Email" />
+                <div class="panel-body">
+                    <h3 class="text-center">
+                        Add Account </h3>
+                    <form class="form form-signup" role="form">
+                    <div class="form-group">
+                        <div class="input-group">
+                            <span class="input-group-addon"><span class="glyphicon glyphicon-pencil"></span>
+                            </span>
+                            <input type="text" class="form-control" placeholder="Name" />
+                        </div>
                     </div>
-                  </div>
-                  <div class="form-group">
-                    <div class="input-group">
-                      <span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
-                        <input type="password" class="form-control" placeholder="Senha" />
+                    
+                    <div class="form-group">
+                        <div class="input-group">
+                            <span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
+                            <input type="password" class="form-control" placeholder="Password" />
+                        </div>
                     </div>
-                  </div>
-
-		          <button class="btn btn-lg btn-success btn-block" type="submit">
-                    Entrar
-		          </button>
-                  <a id="register" href="registrar.html" class="btn btn-lg btn-primary btn-block">Registrar</a>
-	            </form>
-              </div>
+                    <div class="form-group">
+                        <div class="input-group">
+                            <span class="input-group-addon"><span class="glyphicon glyphicon-question-sign"></span></span>
+                            <select id="subject" placeholder="Type" 
+                            class="form-control" required="required">
+                            <option value="suggestions">Secretary</option>
+                            <option value="product">Assistant</option> </select>
+                            </div> 
+                    </div>
+                
+                <a href="http://www.jquery2dotnet.com" class="btn btn-sm btn-primary btn-block" role="button">
+                    Add</a> </form>
             </div>
-          </div>
         </div>
-      </div>
     </div>
-  </form>
+</div>
+</form>
+
+
 
   </body>
 </html>
