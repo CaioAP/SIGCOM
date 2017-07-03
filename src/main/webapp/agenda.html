@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>SIGCOM</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="styleAgenda.css">
+    <script src="js.js"></script>
+  </head>
+  <body>
+
+    <div class="navbar-wrapper">
+      <div class="container-fluid">
+        <nav class="navbar navbar-fixed-top">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand logo" href="#">SIGCOM</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="home.html" class="cor">Home</a></li>
+                <li><a href="agenda.html" class="cor">Agenda</a></li>
+                <li><a href="consulta.html" class="cor">Consulta</a></li>
+                <li><a href="exames.html" class="cor">Exames</a></li>
+              </ul>
+              <ul class="nav navbar-nav pull-right">
+                <li class="active"><a href="#" class="cor"><span class="glyphicon glyphicon-user"></span>Usuario</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+
+  <div class="agendaContainer" style="border-width:60px 9px">
+    <div id="working" style="display:none"><img class="rnd" id="ajaxspin" src="//d304pchb3b61hb.cloudfront.net/img/progress.gif" alt="Working…"></div>
+      <div id="noroom" style="display:none"></div>
+        <div id="viewholder"><table class="weekCont" id="container" cellspacing="0" cellpadding="0" style="border-style: none; table-layout: auto;">
+          <thead><tr class="dayHeading"><th width="41px"> </th>
+          <th id="h0" style="display: none;"><div class="fixwidth">Sun 3-13</div></th>
+          <th id="h1" class="todayHead"><div class="fixwidth">Mon 3-14</div></th>
+          <th id="h2"><div class="fixwidth">Tue 3-15</div></th>
+          <th id="h3"><div class="fixwidth">Wed 3-16</div></th>
+          <th id="h4"><div class="fixwidth">Thu 3-17</div></th>
+          <th id="h5"><div class="fixwidth">Fri 3-18</div></th>
+          <th id="h6" style="display: none;"><div class="fixwidth">Sat 3-19</div></th></tr></thead>
+          <tbody style="line-height:21px"><tr><td id="hours">
+            <table width="100%" cellspacing="0" cellpadding="2" class="hour"><tbody><tr class="e"><td>09h</td></tr><tr class="o"><td> </td></tr>
+            <tr class="e"><td>10h</td></tr><tr class="o"><td> </td></tr><tr class="e">
+        <td>11h</td></tr><tr class="o"><td> </td></tr><tr class="e">
+        <td>12h</td></tr><tr class="o"><td> </td></tr><tr class="e">
+        <td>13h</td></tr><tr class="o"><td> </td></tr><tr class="e">
+        <td>14h</td></tr><tr class="o"><td> </td></tr><tr class="e">
+        <td>15h</td></tr><tr class="o"><td> </td></tr><tr class="e">
+        <td>16h</td></tr><tr class="o"><td> </td></tr><tr class="e">
+        <td>17h</td></tr><tr class="o"><td> </td></tr><tr class="e">
+        <td>18h</td></tr><tr class="o"><td> </td></tr></tbody></table></td>
+    <td id="hh0" style="display: none;"><div id="d0" class="day closed" onclick="chandle(event,0)"><div id="g0"></div><div id="e0"></div><div id="a0"><div style="position:absolute"></div></div>
+    <table width="100%" class="p0 l">
+    <tbody><tr class="e"><td> </td></tr>
+    <tr class="o"><td> </td></tr>
+    <tr class="e"><td> </td></tr>
+    <tr class="o"><td> </td></tr>
+    <tr class="e"><td> </td></tr>
+    <tr class="o"><td> </td></tr>
+    <tr class="e"><td> </td></tr>
+    <tr class="o"><td> </td></tr>
+    <tr class="e"><td> </td></tr>
+    <tr class="o"><td> </td></tr>
+    <tr class="e"><td> </td></tr>
+    <tr class="o"><td> </td></tr>
+    <tr class="e"><td> </td></tr>
+    <tr class="o"><td> </td></tr>
+    <tr class="e"><td> </td></tr>
+    <tr class="o"><td> </td></tr>
+    <tr class="e"><td> </td></tr>
+    <tr class="o"><td> </td></tr>
+    <tr class="e"><td> </td></tr>
+    <tr class="o"><td> </td></tr>
+        
+    </tbody></table></div></td><td id="hh1"><div id="d1" class="day today rd" onclick="chandle(event,1)"><div id="g1"></div><div id="e1"></div><div id="a1"><div style="position:absolute"></div></div><table width="100%" class="p0 l"><tbody><tr class="e"><td> </td></tr><tr class="o"><td> </td></tr><tr class="e"><td> </td></tr><tr class="o"><td> </td></tr><tr class="e"><td> </td></tr><tr class="o"><td> </td></tr><tr class="e"><td> </td></tr><tr class="o"><td> </td></tr><tr class="e"><td> </td></tr><tr class="o"><td> </td></tr><tr class="e"><td> </td></tr><tr class="o"><td> </td></tr><tr class="e"><td> </td></tr><tr class="o"><td> </td></tr><tr class="e"><td> </td></tr><tr class="o"><td> </td></tr><tr class="e"><td> </td></tr><tr class="o"><td> </td></tr><tr class="e"><td> </td></tr><tr class="o"><td> </td></tr></tbody></table></div></td><td id="hh2"><div id="d2" class="day rd" onclick="chandle(event,2)"><div id="g2"></div><div id="e2"></div><div id="a2"><div style="top:156px;left:0%;right:0%" class="chip rd" onclick="hce(event,5918402)" title="Team meeting 3
+administrator"><div class="of bcol2"></div><div class="if bcol2"></div><div style="height:151px" class="out f col2"><div class="head bcol2"> 12:00pm −  3:00pm</div><div class="in">Team meeting 3<br>administrator</div></div><div class="if f col2 lb rb"></div><div class="of bcol2"></div></div></div><table width="100%" class="p0 l"><tbody><tr class="e"><td> </td></tr><tr class="o"><td> </td></tr><tr class="e"><td> </td></tr><tr class="o"><td> </td></tr><tr class="e"><td> </td></tr><tr class="o"><td> </td></tr><tr class="e"><td> </td></tr><tr class="o"><td> </td></tr><tr class="e"><td> </td></tr><tr class="o"><td> </td></tr><tr class="e"><td> </td></tr><tr class="o"><td> </td></tr><tr class="e"><td> </td></tr><tr class="o"><td> </td></tr><tr class="e"><td> </td></tr><tr class="o"><td> </td></tr><tr class="e"><td> </td></tr><tr class="o"><td> </td></tr><tr class="e"><td> </td></tr><tr class="o"><td> </td></tr></tbody></table></div></td><td id="hh3"><div id="d3" class="day rd" onclick="chandle(event,3)"><div id="g3"></div><div id="e3"></div><div id="a3"><div style="top:156px;left:0%;right:0%" class="chip rd" onclick="hce(event,5918405)" title="Team meeting 3
+administrator"><div class="of bcol2"></div><div class="if bcol2"></div><div style="height:151px" class="out f col2"><div class="head bcol2"> 12:00pm −  3:00pm</div><div class="in">Team meeting 3<br>administrator</div></div><div class="if f col2 lb rb"></div><div class="of bcol2"></div></div></div><table width="100%" class="p0 l"><tbody><tr class="e"><td> </td></tr><tr class="o"><td> </td></tr><tr class="e"><td> </td></tr><tr class="o"><td> </td></tr><tr class="e"><td> </td></tr><tr class="o"><td> </td></tr><tr class="e"><td> </td></tr><tr class="o"><td> </td></tr><tr class="e"><td> </td></tr><tr class="o"><td> </td></tr><tr class="e"><td> </td></tr><tr class="o"><td> </td></tr><tr class="e"><td> </td></tr><tr class="o"><td> </td></tr><tr class="e"><td> </td></tr><tr class="o"><td> </td></tr><tr class="e"><td> </td></tr><tr class="o"><td> </td></tr><tr class="e"><td> </td></tr><tr class="o"><td> </td></tr></tbody></table></div></td><td id="hh4"><div id="d4" class="day rd" onclick="chandle(event,4)"><div id="g4"></div><div id="e4"></div><div id="a4"><div style="position:absolute"></div></div><table width="100%" class="p0 l"><tbody><tr class="e"><td> </td></tr><tr class="o"><td> </td></tr><tr class="e"><td> </td></tr><tr class="o"><td> </td></tr><tr class="e"><td> </td></tr><tr class="o"><td> </td></tr><tr class="e"><td> </td></tr><tr class="o"><td> </td></tr><tr class="e"><td> </td></tr><tr class="o"><td> </td></tr><tr class="e"><td> </td></tr><tr class="o"><td> </td></tr><tr class="e"><td> </td></tr><tr class="o"><td> </td></tr><tr class="e"><td> </td></tr><tr class="o"><td> </td></tr><tr class="e"><td> </td></tr><tr class="o"><td> </td></tr><tr class="e"><td> </td></tr><tr class="o"><td> </td></tr></tbody></table></div></td><td id="hh5"><div id="d5" class="day rd" onclick="chandle(event,5)"><div id="g5"></div><div id="e5"></div><div id="a5"><div style="position:absolute"></div></div><table width="100%" class="p0 l"><tbody><tr class="e"><td> </td></tr><tr class="o"><td> </td></tr><tr class="e"><td> </td></tr><tr class="o"><td> </td></tr><tr class="e"><td> </td></tr><tr class="o"><td> </td></tr><tr class="e"><td> </td></tr><tr class="o"><td> </td></tr><tr class="e"><td> </td></tr><tr class="o"><td> </td></tr><tr class="e"><td> </td></tr><tr class="o"><td> </td></tr><tr class="e"><td> </td></tr><tr class="o"><td> </td></tr><tr class="e"><td> </td></tr><tr class="o"><td> </td></tr><tr class="e"><td> </td></tr><tr class="o"><td> </td></tr><tr class="e"><td> </td></tr><tr class="o"><td> </td></tr></tbody></table></div></td><td id="hh6" style="display: none;"><div id="d6" class="day closed" onclick="chandle(event,6)"><div id="g6"></div><div id="e6"></div><div id="a6"><div style="position:absolute"></div></div><table width="100%" class="p0 l"><tbody><tr class="e"><td> </td></tr><tr class="o"><td> </td></tr><tr class="e"><td> </td></tr><tr class="o"><td> </td></tr><tr class="e"><td> </td></tr><tr class="o"><td> </td></tr><tr class="e"><td> </td></tr><tr class="o"><td> </td></tr><tr class="e"><td> </td></tr><tr class="o"><td> </td></tr><tr class="e"><td> </td></tr><tr class="o"><td> </td></tr><tr class="e"><td> </td></tr><tr class="o"><td> </td></tr><tr class="e"><td> </td></tr><tr class="o"><td> </td></tr><tr class="e"><td> </td></tr><tr class="o"><td> </td></tr><tr class="e"><td> </td></tr><tr class="o"><td> </td></tr></tbody></table></div></td></tr><tr id="oor" class="oor" style="display:none"><td> </td><td id="oor0" style="display: none;"></td><td id="oor1"></td><td id="oor2"></td><td id="oor3"></td><td id="oor4"></td><td id="oor5"></td><td id="oor6" style="display: none;"></td></tr></tbody></table></div>
+  </div>
+  </body>
+</html>

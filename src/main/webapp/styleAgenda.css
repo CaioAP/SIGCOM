@@ -1,0 +1,18 @@
+element.style {
+    border-width: 6px 9px;
+}
+div.agendaContainer {
+    border: solid 6px #C3D9FF;
+    border-bottom-width: 4px;
+}
+user agent stylesheet
+div {
+    display: block;
+}
+Inherited from body
+body {
+    font-family: sans-serif;
+    color: #575757;
+    font-size: 11pt;
+    margin: 0 0 5px 0;
+}

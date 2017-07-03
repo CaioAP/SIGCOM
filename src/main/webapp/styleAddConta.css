@@ -8,8 +8,8 @@ body
     max-width: 280px;
     padding: 15px;
     margin:100px;
-    margin-top:160px;
-    margin-left: 200px;
+    margin-top:220px;
+    margin-left: 320px;
   }
 .panel-default {
 opacity: 0.9;
@@ -48,10 +48,4 @@ opacity: 0.9;
 .logo {
     color: white;
     font-size: 22px;
-}
-.tamanho {
-    font-size: 80px;
-}
-.tamanho2 {
-    font-size: 24px;
 }

@@ -5,7 +5,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="styleAddConta.css">
+    <script src="js.js"></script>
   </head>
   <body>
 
@@ -24,14 +25,13 @@
             </div>
             <div id="navbar" class="navbar-collapse collapse">
               <ul class="nav navbar-nav">
-                <li class="active"><a href="sigcom/home.html" class="cor">Home</a></li>
-                <li><a href="#" class="cor">Agenda</a></li>
-                <li><a href="#" class="cor">Consulta</a></li>
-                <li><a href="#" class="cor">Exames</a></li>
+                <li class="active"><a href="home.html" class="cor">Home</a></li>
+                <li><a href="agenda.html" class="cor">Agenda</a></li>
+                <li><a href="consulta.html" class="cor">Consulta</a></li>
+                <li><a href="exames.html" class="cor">Exames</a></li>
               </ul>
               <ul class="nav navbar-nav pull-right">
-                <li class="active"><a href="#" class="cor">Usuario</a></li>
-                <li class="active"><a href="#" class="cor">Register</a></li>
+                <li class="active"><a href="#" class="cor"><span class="glyphicon glyphicon-user"></span>Usuario</a></li>
               </ul>
             </div>
           </div>
@@ -47,20 +47,20 @@
             <div class="panel panel-default">
                 <div class="panel-body">
                     <h3 class="text-center">
-                        Add Account </h3>
+                        Adicionar Conta </h3>
                     <form class="form form-signup" role="form">
                     <div class="form-group">
                         <div class="input-group">
                             <span class="input-group-addon"><span class="glyphicon glyphicon-pencil"></span>
                             </span>
-                            <input type="text" class="form-control" placeholder="Name" />
+                            <input type="text" class="form-control" placeholder="Nome" />
                         </div>
                     </div>
                     
                     <div class="form-group">
                         <div class="input-group">
                             <span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
-                            <input type="password" class="form-control" placeholder="Password" />
+                            <input type="password" class="form-control" placeholder="Senha" />
                         </div>
                     </div>
                     <div class="form-group">
@@ -68,8 +68,8 @@
                             <span class="input-group-addon"><span class="glyphicon glyphicon-question-sign"></span></span>
                             <select id="subject" placeholder="Type" 
                             class="form-control" required="required">
-                            <option value="suggestions">Secretary</option>
-                            <option value="product">Assistant</option> </select>
+                            <option value="suggestions">Médico</option>
+                            <option value="product">Assistente</option> </select>
                             </div> 
                     </div>
                 
