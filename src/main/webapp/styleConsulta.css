@@ -11,8 +11,7 @@
 
 .form-signin {
     position:absolute;
-    max-width: 0px;
-    max-height: 20px;
+
     padding: 110px;
     margin:100px;
     margin-top:20px;
@@ -35,8 +34,14 @@
   }
   
   .ss {
-    width:70px; 
+    width:90px; 
   
+  }
+
+  p2{
+    font-size : 18px;
+    text-align:center;
+    padding-left: 40%;
   }
   
   th , td{
@@ -44,6 +49,7 @@
   }
 
 .button2 {
+
     background-color: #ffffff;
     color: black;
     display : inline-block;
@@ -84,7 +90,6 @@
     border:1px dotted #ccc;
     padding : 6px 30px ;
     border-radius: 8px;
-    position:absolute;
     bottom : 250px;
     margin-left:30px;
 }
@@ -97,6 +102,7 @@ table{
 }
 td{
     height:200;
+    width : 200px;
 }
 
 .panel{
@@ -104,7 +110,8 @@ td{
     padding: 0px;
     margin-top:100px;
     margin-left:200px;
-
+    min-width: 600px;
+    max-height: 410px;
 }
 
 .pane {
